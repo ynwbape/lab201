@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+
+    <!-- Materialize CSS -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="../../materialize/css/materialize.min.css"  media="screen,projection"/>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="admin.css">
+
+</head>
+<body>
+
+    <!-- to Login -->
+    <div class="formField login">
+        <div class="row">
+            <form method="post" id="login-field" class="col s12 center-align">
+                <h2 class="grey-text lighten-2">Se connecter</h2>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">mail</i>
+                        <label for="email">Email</label>
+                        <input id="login-email" type="email" class="validate" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">password</i>
+                        <label for="password">Mot de passe</label>
+                        <input id="login-password" type="password" class="validate" required>
+                    </div>
+                </div>
+                <button id="login-btn" type="submit" class="btn waves-effect waves-light" name="action">
+                    <i class="material-icons right">send</i>
+                    se connecter
+                </button>
+            </form>
+        </div>
+    </div>
+
+
+    <!-- Materialize CSS -->
+    <script type="text/javascript" src="../../materialize/js/materialize.min.js"></script>
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+
+    <script>
+        const config = {
+            apiKey: "AIzaSyAx323RcrPqT365UT4ZBBd2gA_o67IXgsM",
+            authDomain: "lab201-eab82.firebaseapp.com",
+            projectId: "lab201-eab82",
+            storageBucket: "lab201-eab82.appspot.com",
+            messagingSenderId: "390412988973",
+            appId: "1:390412988973:web:f7f1b30a328f9443d5bea4"
+        }
+
+        firebase.initializeApp(config);
+
+        const auth = firebase.auth();
+
+    </script>
+    <script src="authentication.js"></script>
+</body>
+</html>

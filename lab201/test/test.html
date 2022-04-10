@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Image</title>
+
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .hover-image {
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+            background-image: url('./1024px-Approve_icon.svg.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            transition: all .3 ease-in;
+        }
+
+        .hover-image:hover {
+            background-image: url('./téléchargement.png');
+            cursor: pointer;
+            transition: all .3s ease-out;
+        }
+
+        .hover-image:active {
+            zoom: 150%;
+        }
+    </style>
+</head>
+<body>
+    <button class="hover-image">
+
+    </button>
+</body>
+</html>
