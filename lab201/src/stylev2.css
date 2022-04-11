@@ -1,0 +1,387 @@
+html {
+scroll-behavior: smooth;
+}
+
+body {
+margin: 0;
+display: inline-flex;
+overflow-y: hidden;
+font-family: sans-serif;
+}
+
+
+div.container {
+display: flex;
+flex-direction: row;
+width: 100vw;
+height: 100vh;
+}
+
+div.video {
+    width: 100vw;
+    height: 100vh;
+    background-color: cornflowerblue;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+header.header {
+background-color: #0D0D3F;
+position: fixed;
+top: 0;
+left: 0;
+bottom: 0;
+width: 13vh;
+height: 100vh;
+z-index: 200;
+}
+
+div.nav-logo {
+display: flex;
+flex-direction: column;
+align-items: center;
+width: 100%;
+height: 100%;
+border: 1px solid black;
+}
+
+div.logo {
+width: 70px;
+height: 70px;
+margin-top: 50px;
+border: 2px solid black;
+background-color: azure;
+}
+
+nav.inline-nav {
+background-color: burlywood;
+display: flex;
+flex-direction: column;
+align-items: center;
+width: 100%;
+height: 87%;
+}
+
+ol {
+text-align: center;
+margin-top: 140px;
+width: 100%;
+height: 100%;
+font-size: 18px;
+}
+
+ol > li {
+margin-bottom: 50px;
+list-style-type: none;
+}
+
+a.nav-link { text-decoration: none; }
+a.nav-link:visited, a.nav-link:link { color: white; }
+
+/*
+li.none { 
+display: flex;
+flex-direction: column;
+}
+*/
+
+svg.picto {
+width: 40px;
+height: 40px;
+}
+
+/*
+button#logout-btn {
+top: 1%;
+right: 0;
+width: 120px;
+height: 55px;
+font-size: 15px;
+}
+*/
+
+
+/*
+button.add-btn {
+z-index: 100;
+}
+
+button#logout-btn {
+z-index: 150;
+}
+*/
+
+div.second-container {
+display: flex;
+flex-direction: row;
+height: 100vh;
+}
+
+main {
+    height: 100vh;
+    display: inline-flex;
+}
+
+section {
+width: 100vw;
+height: 100vh;
+background-color: #00A4BD;
+}
+
+
+
+section#artist {
+display: flex;
+flex-direction: row;
+
+} 
+
+
+/*
+div.text-artist {
+background-color: aquamarine;
+width: 50%;
+height: 50%;
+}
+
+div.text-artist > p { font-size: 25px; }
+
+div.artist-figure {
+background-color: chartreuse;
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 60%;
+height: 50%;
+}
+
+section#album {
+display: flex;
+flex-direction: row;
+}
+
+section#album > article {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+width: 100%;
+height: 100%;
+border: 1px solid black;
+color: black;
+}
+
+div.album-figure {
+background-color: black;
+width: 80%;
+height: 50%;
+}
+
+div.tracklist {
+background-color: cornsilk;
+width: 80%;
+height: 70%;
+}
+
+
+section#tournee {
+display: flex;
+flex-direction: row;
+}
+
+div.tour-head {
+position: relative;
+z-index: 50;
+width: 30%;
+height: 100%;
+text-align: center;
+background-color: #0D0D3F;
+}
+
+hr {
+text-align: center;
+border: none;
+border-top: 2px solid white;
+width: 65%;
+}
+
+div.tour-list {
+width: 100%;
+height: 100%;
+}
+
+div.search {
+display: inline-flex;
+justify-content: center;
+width: 100%;
+height: 10%;
+}
+
+input.search-bar {
+width: 100%;
+height: 100%;
+}
+
+.search-bar::placeholder {
+text-align: center;
+font-size: 25px;
+}
+
+div.map-tour {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: darkorange;
+}
+
+
+div.dates {
+height: 85%;
+scroll-behavior: smooth;
+overflow-y: auto;
+}
+
+article.large-card {
+width: 100%;
+height: 120px;
+background-color: coral;
+}  
+
+
+footer {
+width: 100vw;
+height: 100%;
+}
+
+div.title-socials {
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+}
+
+h1.t-size {
+text-transform: capitalize;
+font-size: 45px;
+letter-spacing: 1px;
+}
+
+div.socials{
+justify-content: space-evenly;
+width: 60%;
+margin-top: 20px;
+}
+
+div.socials > a {
+text-decoration: none;
+}
+
+div.socials > a > svg {
+width: 40px;
+height: 40px;
+} 
+
+div.foots {
+margin-top: 150px;
+text-align: center;
+}
+
+h2.t-size-2 {
+font-size: 35px;
+letter-spacing: 1px;
+}
+
+div.foots > hr {
+margin-top: -10px;
+margin-bottom: 45px;
+border-top: 2px solid white;
+width: 40%;
+}
+
+p.phrase {
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 70%;
+font-size: 17px;
+}
+
+div.mosaert-news {
+display: inline-flex;
+justify-content: space-between;
+}
+
+div.about-mosaert {
+text-align: center;
+margin-top: 40px;
+font-weight: bold;
+}
+
+.vrefvrdv {
+color: white;
+text-decoration: none;
+}
+
+.vrefvrdv:hover {
+text-decoration: underline;
+}
+.vrefvrdv:active {
+color: black;
+}
+
+.vrefvrdv:visited {
+color: white;
+}
+
+
+.vfg {
+text-decoration: underline;
+font-size: 14px;
+margin-right: 75px;
+}
+
+.vfg:active {
+color: black;
+}
+
+div.form-news {
+display: inline-flex;
+justify-content: center;
+width: 100%;
+height: 40px;
+margin-top: 15px;
+margin-bottom: 20px;
+}
+
+form.newsletter{
+display: inline-flex;
+justify-content: space-around;
+width: 63%;
+height: 100%;
+}
+
+div.policy {
+display: inline-flex;
+margin-top: 200px;
+height: auto;
+}
+
+div.policies {
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+width: 100%;
+height: auto;
+}
+
+a.policy-links {
+font-size: 25px;
+}
+
+div.policies > span {
+font-size: 25px;
+} */
