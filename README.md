@@ -2,4 +2,6 @@
 Projet Finale Lab201 sur Stromae
 
 
-Bienvenue sur le github du projet lab201 centré sur <h1>Stromae</h1>
+<h1 style="color: red">IN DEVELOPMENT FOR SOME MODIFACTIONS !</h1>
+
+<small>Thanks for waiting <span style="font-style: italic">coming soon</span><small>
